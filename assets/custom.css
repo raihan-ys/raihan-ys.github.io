@@ -139,12 +139,12 @@ nav .navbar-toggler {
 #about h3 {
 	color: #e4b36f;
 }
-#about h3 img{
+#about h3 img {
 	height: 50px;
 }
-#about row img {
+#about .img-fluid {
 	max-height: 500px; 
-	border: rgb(22, 24, 27) dashed 5px;
+	border: rgb(22, 24, 27) 10px solid;
 }
 /* /.about */
 
