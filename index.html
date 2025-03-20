@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Raihan Yudi Syukma's Website">
+
+	<title>Raihan Yudi Syukma</title>
+
+	<!-- Favicon -->	
+	<link type="image/png" href="assets/images/logo.png" rel="icon">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/custom.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+	<!-- raindrop container -->
+	<div id="raindropContainer"></div>
+
+	<!-- navbar -->
+	<nav class="navbar navbar-expand-lg pb-0">
+		<div class="container-fluid">
+
+			<!-- brand logo -->
+			<div class="navbar-brand d-flex flex-column align-items-center">
+				<img src="assets/images/logo.png" alt="Website's Logo">
+				<span>&nbsp;R.Y.S.</span>
+			</div>
+
+			<!-- rabbit ears -->
+			<div id="rabbitEarsContainer" class="text-center">
+				<img src="assets/images/rabbit-ears.png" alt="Rabbit Ears Image">
+			</div>
+
+			<!-- navbar toggler -->
+			<div id="navbarToggler" class="d-flex flex-column align-items-center">
+				<button class="navbar-toggler btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavContainer" aria-controls="navbarNavContainer" aria-expanded="false" aria-label="Toggle Navigation">
+					&#9776;
+				</button>
+			</div>
+            
+			<div class="collapse navbar-collapse" id="navbarNavContainer">
+				<!-- content -->
+				<ul class="navbar-nav me-auto">
+					<!-- about -->
+					<li class="nav-item">
+						<a href="#about" class="nav-link d-flex align-items-center">
+							<img src="assets/images/info.png" alt="Info Image" class="me-2">About
+						</a>
+					</li>
+					<!-- contact -->
+					<li class="nav-item">
+						<a href="#contact" class="nav-link d-flex align-items-center">
+							<img src="assets/images/phone.png" alt="Phone Image" class="me-1">Contact
+						</a>
+					</li>   
+				</ul>
+				<!-- /.content -->
+			</div>
+		</div>
+	</nav>
+    
+	<!-- hero -->
+	<div id="hero" class="jumbotron-fluid mb-5">
+
+		<!-- repeated image -->
+		<div id="toothContainer" class="d-flex flex-row justify-content-center"></div>
+
+		<div class="jumbotron-fluid row p-3 m-0">
+			<!-- carousel -->
+			<div id="carouselContainer" class="col-md-6 p-0 h-100 position-relative overflow-hidden"> 
+				<div class="carousel slide carousel-fade h-100 w-100" id="heroCarousel" data-bs-ride="carousel">
+					<!-- indicators -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="bg-danger" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner h-100">
+						<!-- slide 1 -->
+						<div class="carousel-item active h-100" data-bs-interval="3000">
+							<img src="assets/images/slide1.jpg" alt="First Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Puncak Lawang, West Sumatra.</small>
+							</div>
+						</div>
+						<!-- slide 2 -->
+						<div class="carousel-item h-100" data-bs-interval="3000">
+							<img src="assets/images/slide2.jpg" alt="Second Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Lembah Harau, West Sumatra.</small>
+							</div>
+						</div>
+						<!-- slide 3 -->
+						<div class="carousel-item h-100" data-bs-interval="3000">
+							<img src="assets/images/slide3.jpg" alt="Third Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Stasiun Lambuang, West Sumatra.</small>
+							</div>
+						</div>
+					</div>
+					<!-- controls -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+				</div>
+			</div>
+			<!-- /.carousel -->
+			<!-- text -->
+			<div class="col-md-6 p-1 d-flex flex-column justify-content-center text-center">
+				<small class="text-danger">Hi, my name is</small>
+				<h1 class="font-weight-bold">Raihan Yudi Syukma</h1>
+				<span class="text-white">
+					Fullstack Web Developer_ <br> 
+					ᗜˬᗜ
+				</span>
+			</div>
+			<!-- /.text -->
+		</div>
+
+		<!-- repeated image -->
+		<div id="toothRotateContainer" class="d-flex flex-row justify-content-center"></div>
+	</div>
+	<!-- /.hero -->
+
+	<!-- about -->
+	<div id="about" class="container p-3 mb-5">
+		<!-- title -->
+		<h3 class="text-center">
+			<img src="assets/images/cookie.png" alt="Cookie Image">
+			A Bit About Me
+		</h3>
+		<!-- contents -->
+		<div class="row">
+			<div class="col-md-6 d-flex flex-column justify-content-center">
+				<p>I'm a Fullstack Web Developer who is passionate about creating websites and web applications. I have experience in developing websites using HTML, CSS, JavaScript, PHP, and MySQL. I am also familiar with frameworks such as Bootstrap, jQuery, and Laravel. I am always eager to learn new things and improve my skills.</p>
+			</div>
+			<div class="col-md-6 d-flex justify-content-center overflow-hidden"> 
+				<img src="assets/images/photo.jpg	" alt="Image of Raihan" class="img-fluid object-fit-cover">
+			</div>
+		</div>
+	</div>
+	<!-- /.about -->
+
+	<!-- skills -->
+	<div id="skills" class="container-fluid mb-5">
+		<div class="container pt-4 pb-4">
+
+			<!-- title -->
+			<h3 class="skills-title text-center d-flex flex-row justify-content-center">
+				Skillset&nbsp>>> <hr>
+			</h3>
+
+			<!-- contents -->
+			<div class="row">
+				<!-- bootstrap -->
+				<div class="skill-card col-md-auto container-fluid mt-3">
+					<div class="card bg-dark text-center">
+						<div class="card-header p-0">
+							<img class="img-fluid" src="assets/images/bootstrap-logo.png" alt="Bootstrap Logo">
+						</div>
+						<div class="card-body text-light text-center">
+							Bootstrap
+						</div>
+					</div>
+				</div>
+				<!-- codeigniter -->
+				<div class="skill-card col-md-auto container-fluid mt-3">
+					<div class="card bg-dark text-center">
+						<div class="card-header p-0">
+							<img class="img-fluid" src="assets/images/codeigniter-logo.png" alt="CodeIgniter Logo">
+						</div>
+						<div class="card-body text-light text-center">
+							CodeIgniter
+						</div>
+					</div>
+				</div>
+				<!-- laravel -->
+				<div class="skill-card col-md-auto container-fluid mt-3">
+					<div class="card bg-dark text-center">
+						<div class="card-header p-0">
+							<img class="img-fluid" src="assets/images/laravel-logo.png" alt="Laravel Logo">
+						</div>
+						<div class="card-body text-light text-center">
+							Laravel
+						</div>
+					</div>
+				</div>
+				<!-- javascript -->
+				<div class="skill-card col-md-auto container-fluid mt-3">
+					<div class="card bg-dark text-center">
+						<div class="card-header p-0">
+							<img class="img-fluid" src="assets/images/javascript-logo.png" alt="JavaScript Logo">
+						</div>
+						<div class="card-body text-light text-center">
+							JavaScript
+						</div>
+					</div>
+				</div>
+				<!-- mysql -->
+				<div class="skill-card col-md-auto container-fluid mt-3">
+					<div class="card bg-dark text-center">
+						<div class="card-header p-0">
+							<img class="img-fluid" src="assets/images/mysql-logo.png" alt="MySQL Logo">
+						</div>
+						<div class="card-body text-light text-center">
+							MySQL
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h3 class="skills-title d-flex flex-row justify-content-center mt-3">
+				<hr>&nbsp>>>
+			</h3>
+		</div>
+	</div>
+	<!-- /.skills -->
+
+	<!-- contact -->
+	<div id="contact" class="mb-5">
+		<div class="container">
+			<div class="row">
+				<!-- title -->
+				<div class="col-md-6">
+					<h2 class="text-center mt-5">Contact Me</h2>
+					<p class="text-justify">If you have any questions or want to work together, feel free to contact me.</p>
+				</div>
+				<!-- form -->
+				<div class="col-md-6">
+					<form action="" method="POST">
+						<div class="form-group mb-3">
+							<label for="name">Name</label><br>
+							<input type="text" name="name" id="name" title="Your name" placeholder="Max 32 characters." autocomplete="true" maxlength="32" required class="w-100">
+						</div>
+						<div class="form-group mb-3">
+							<label for="email">Email</label><br>
+							<input type="email" name="email" id="email" title="Your email" placeholder="Max 64 characters." autocomplete="true" maxlength="64" required class="w-100">
+						</div>
+						<div class="form-group mb-3">
+							<label for="message">Message</label><br>
+							<textarea name="message" id="message" title="Your message for me :>" placeholder="Max 30.000 characters." autocomplete="true" required rows="5" cols="30" maxlength="30000" class="w-100"></textarea>
+						</div>
+						<button type="submit" class="btn btn-danger">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.contact -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="text-center" id="bowtieContainer">
+			<img src="assets/images/bowtie.png" alt="Bowtie Image" class="img-fluid">
+		</div>
+		<div class="container p-4">
+			<p class="text-white text-center mb-1">
+				Made with <img src="assets/images/heart.png" alt="Heart Image"> by Raihan
+			</p>
+			<!-- links -->
+			<ul class="d-flex justify-content-center list-unstyled m-0">	
+				<!-- facebook -->
+				<li>
+					<a href="https://www.facebook.com/rainharderr" target="_blank">
+						<img src="assets/images/facebook-logo.png" alt="Facebook Image">
+					</a>
+				</li>
+				<!-- instagram -->
+				<li>
+					<a href="https://www.instagram.com/_rainharder/" target="_blank">
+						<img src="assets/images/instagram-logo.png" alt="instagram Image">
+					</a>
+				</li>
+				<!-- whatsapp -->
+				<li>
+					<a href="https://wa.me/6281990576161" target="_blank">
+						<img src="assets/images/whatsapp-logo.png" alt="Whatsapp Image">
+					</a>
+				</li>
+			</ul>
+			<!-- /.links -->
+		</div>
+	</footer>
+	<!-- /.footer -->
+
+	<!-- jQuery JS -->
+	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<script>
+	$(document).ready(function() {
+		// Generate raindrops.
+		const raindropContainer = $("#raindropContainer");
+		const numberOfRaindrops = 50;
+
+		for (let i = 0; i < numberOfRaindrops; i++) {
+			const raindrop = $("<span class='raindrop bg-primary'></span>");
+			raindrop.css({
+				left: Math.random() * 100 + "vw",
+				animationDuration: Math.random() * 2 + 1 + "s",
+				animationDelay: Math.random() * 5 + "s"
+			});
+
+			raindropContainer.append(raindrop);
+		}
+
+		// Navbar toggler.
+		$(".navbar-toggler").click(function() {
+			$(".navbar").addClass("bg-dark");
+		});
+		$(".navbar-toggler").mouseout(function() {
+			$(".navbar").removeClass("bg-dark");
+		});
+
+    // Repeat image based on container's width.
+    function repeatImage(container, image) {
+			// Get container's width (Convert jQuery object to raw DOM element for width calculation).
+			const containerWidth = container[0].offsetWidth;
+			const imageWidth = parseInt(image.css("width")); // Get CSS-defined width.
+
+			// Clear previous images to prevent duplication.
+			container.empty();
+
+			// Calculate number of images.
+			const numberOfImages = Math.ceil(containerWidth / imageWidth);
+
+			// Append image to container.
+			for (let i = 0; i < numberOfImages - 1; i++) {
+				const imgClone = image.clone(true).css("width", imageWidth + "px"); // Ensure cloned images maintain width.
+				container.append(imgClone);
+			}
+    }
+
+		// Repeat tooth image.
+		const toothContainer = $("#toothContainer");
+		const toothImage = $("<img>", {
+			src: "assets/images/tooth.png",
+			alt: "Sharp Tooth Image",
+			css: {
+				width: "30px"
+			}
+		}).appendTo(toothContainer); // Ensure image is in the DOM before measuring its width.
+		const toothRotateContainer = $("#toothRotateContainer");
+		const toothRotateImage = $("<img>", {
+			src: "assets/images/tooth-rotate.png",
+			alt: "Sharp Tooth Image",
+			css: {
+				width: "30px"
+			}
+		}).appendTo(toothRotateContainer); // Ensure image is in the DOM before measuring its width.
+
+		// Wait for tooth image to load before applying repeatImage function.
+		toothImage.on("load", function() {
+			repeatImage(toothContainer, toothImage);
+		});
+		toothRotateImage.on("load", function() {
+			repeatImage(toothRotateContainer, toothRotateImage);
+		});
+
+		// Set tooth image repeat on window resize.
+		$(window).resize(function() {
+			repeatImage(toothContainer, toothImage);
+			repeatImage(toothRotateContainer, toothRotateImage);
+		});
+
+		// Change contact form's input background color.
+		$("input, textarea").focus(function() {
+			$(this).css("background-color", "RGB(255, 153, 153)");
+		});
+		$("input, textarea").blur(function() {
+			$(this).css("background-color", "white");
+			$(this).css("border", "2px solid red");
+		});
+	});
+</script>
