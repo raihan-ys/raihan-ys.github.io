@@ -254,6 +254,7 @@ footer ul li img {
 @media (max-width: 767px) {
 	/* nav */
 	nav .navbar-brand {
+   width: 10%;
 		font-size: 0.5rem;
 	}
 	nav .navbar-brand img {
@@ -264,6 +265,9 @@ footer ul li img {
 	nav #rabbitEarsContainer img {
 		height: 80px;
 	}
+ nav "navbarToggler {
+  width: 10%;
+ }
 	/* /nav */
 
 	/* hero */
