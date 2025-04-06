@@ -84,13 +84,13 @@ nav .navbar-collapse {
 }
 nav .nav-item a {
 	color: #BF77F6;
-	font-size: 0.6rem;
+	font-size: 0.4rem;
 }
 nav .nav-item a:hover,
 nav .nav-item a:focus {
 	background-color: #252941;
 	color: #BF77F6;
-	font-size: 0.8rem;
+	font-size: 0.6rem;
 }
 nav .nav-item a img {
 	width: 30px;
