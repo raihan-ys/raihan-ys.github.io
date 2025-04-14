@@ -12,6 +12,8 @@
 	<link type="image/png" href="assets/images/logo.png" rel="icon">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Splide CSS -->
+  <link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/custom.css">
 </head>
@@ -158,77 +160,91 @@
 	<!-- /.about -->
 
 	<!-- skills -->
-	<div id="skills" class="container-fluid mb-5">
-		<div class="container pt-4 pb-4">
+	<div id="skills" class="splide container-fluid mb-5 pt-4 pb-4" role="group" aria-label="Skills Carousel">
 
-			<!-- title -->
-			<h3 class="skills-title text-center d-flex flex-row justify-content-center">
-				Skillset&nbsp>>> <hr>
-			</h3>
+		<!-- title -->
+		<h3 class="skills-title text-center d-flex flex-row justify-content-center">
+			Skillset&nbsp>>> <hr>
+		</h3>
 
-			<!-- contents -->
-			<div class="row">
+		<div class="splide__track">
+			<ul class="splide__list">
+
 				<!-- bootstrap -->
-				<div class="skill-card col-md-auto container-fluid mt-3">
-					<div class="card bg-dark text-center">
-						<div class="card-header p-0">
-							<img class="img-fluid" src="assets/images/bootstrap-logo.png" alt="Bootstrap's Logo">
-						</div>
-						<div class="card-body text-light text-center">
-							Bootstrap
-						</div>
-					</div>
-				</div>
-				<!-- codeigniter -->
-				<div class="skill-card col-md-auto container-fluid mt-3">
-					<div class="card bg-dark text-center">
-						<div class="card-header p-0">
-							<img class="img-fluid" src="assets/images/codeigniter-logo.png" alt="CodeIgniter's Logo">
-						</div>
-						<div class="card-body text-light text-center">
-							CodeIgniter
+				<li class="splide__slide">
+					<div class="skill-card col-md-auto container-fluid mt-3">
+						<div class="card bg-dark text-center">
+							<div class="card-header p-0">
+								<img class="img-fluid" src="assets/images/bootstrap-logo.png" alt="Bootstrap's Logo">
+							</div>
+							<div class="card-body text-light text-center">
+								Bootstrap
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- laravel -->
-				<div class="skill-card col-md-auto container-fluid mt-3">
-					<div class="card bg-dark text-center">
-						<div class="card-header p-0">
-							<img class="img-fluid" src="assets/images/laravel-logo.png" alt="Laravel's Logo">
-						</div>
-						<div class="card-body text-light text-center">
-							Laravel
-						</div>
-					</div>
-				</div>
-				<!-- react-->
-				<div class="skill-card col-md-auto container-fluid mt-3">
-					<div class="card bg-dark text-center">
-						<div class="card-header p-0">
-							<img class="img-fluid" src="assets/images/react-logo.png" alt="React's Logo">
-						</div>
-						<div class="card-body text-light text-center">
-							React
-						</div>
-					</div>
-				</div>
-				<!-- mysql -->
-				<div class="skill-card col-md-auto container-fluid mt-3">
-					<div class="card bg-dark text-center">
-						<div class="card-header p-0">
-							<img class="img-fluid" src="assets/images/mysql-logo.png" alt="MySQL's Logo">
-						</div>
-						<div class="card-body text-light text-center">
-							MySQL
-						</div>
-					</div>
-				</div>
-			</div>
+				</li>
 
-			<h3 class="skills-title d-flex flex-row justify-content-center mt-3">
-				<hr>&nbsp>>>
-			</h3>
+				<!-- codeigniter -->
+				<li class="splide__slide">
+					<div class="skill-card col-md-auto container-fluid mt-3">
+						<div class="card bg-dark text-center">
+							<div class="card-header p-0">
+								<img class="img-fluid" src="assets/images/codeigniter-logo.png" alt="CodeIgniter's Logo">
+							</div>
+							<div class="card-body text-light text-center">
+								CodeIgniter
+							</div>
+						</div>
+					</div>	
+				</li>
+
+				<!-- laravel -->
+				<li class="splide__slide">
+					<div class="skill-card col-md-auto container-fluid mt-3">
+						<div class="card bg-dark text-center">
+							<div class="card-header p-0">
+								<img class="img-fluid" src="assets/images/laravel-logo.png" alt="Laravel's Logo">
+							</div>
+							<div class="card-body text-light text-center">
+								Laravel
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<!-- react -->
+				<li class="splide__slide">
+					<div class="skill-card col-md-auto container-fluid mt-3">
+						<div class="card bg-dark text-center">
+							<div class="card-header p-0">
+								<img class="img-fluid" src="assets/images/react-logo.png" alt="React's Logo">
+							</div>
+							<div class="card-body text-light text-center">
+								React
+							</div>
+						</div>
+					</div>	
+				</li>
+
+				<!-- MySQL -->
+				<li class="splide__slide">
+					<div class="skill-card col-md-auto container-fluid mt-3">
+						<div class="card bg-dark text-center">
+							<div class="card-header p-0">
+								<img class="img-fluid" src="assets/images/mysql-logo.png" alt="MySQL's Logo">
+							</div>
+							<div class="card-body text-light text-center">
+								MySQL
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
 		</div>
+
+		<h3 class="skills-title d-flex flex-row justify-content-center mt-3">
+			<hr>&nbsp>>>
+		</h3>
 	</div>
 	<!-- /.skills -->
 
@@ -306,6 +322,9 @@
 </body>
 </html>
 
+<!-- Splide JS -->
+<script src="assets/splide/dist/js/splide.min.js"></script>
+<!-- Custom JS -->
 <script>
 	$(document).ready(function() {
 		// Generate raindrops.
@@ -391,4 +410,20 @@
 			$(this).css("border", "2px solid red");
 		});
 	});
+
+	// Initialize Splide slider to skills carousel.
+	const splide = new Splide('.splide', {
+		type       : 'loop',
+		perPage    : 3,
+		perMove    : 1,
+		breakpoints: {
+			640: {
+				perPage: 1,
+			},
+			768: {
+				perPage: 2,
+			},
+		},
+	});
+	splide.mount();
 </script>
