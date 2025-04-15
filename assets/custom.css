@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 .raindrop {
 	position: absolute;
 	bottom: 100%;
-	width: 2px;
+	width: 4px;
 	height: 10px;
 	background-color: #fff;
 	border-radius: 50%;

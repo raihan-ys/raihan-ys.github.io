@@ -2,7 +2,8 @@
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.5",
+    "jquery": "^3.7.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",

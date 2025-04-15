@@ -11,9 +11,9 @@
 	<!-- Favicon -->	
 	<link type="image/png" href="assets/images/logo.png" rel="icon">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<!-- Splide CSS -->
-  <link rel="stylesheet" href="assets/splide/dist/css/splide.min.css">
+  <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/custom.css">
 </head>
@@ -295,7 +295,7 @@
 			<ul class="d-flex justify-content-center list-unstyled m-0">
 				<!-- linkedin -->
 				 <li>
-					<a href="https://www.linkedin.com/in/raihanyudis/" target="_blank">
+					<a href="https://www.linkedin.com/in/raihan-yudi-syukma-236517351" target="_blank">
 						<img src="assets/images/linkedin-logo.png" alt="LinkedIn Image">
 				 </li>
 				<!-- facebook -->
@@ -323,12 +323,15 @@
 	<!-- /.footer -->
 
 	<!-- jQuery JS -->
-	<script type="text/javascript" src="assets/jquery/jquery.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
 
+<!-- Splide JS-->
+<script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+<script src="node_modules/@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
 <!-- Custom JS -->
 <script>
 	$(document).ready(function() {
@@ -431,7 +434,13 @@
 				perPage: 2,
 			},
 		},
+		autoScroll: {
+			speed: 1,
+			autoStart: true,
+			rewind: true,
+			pauseOnHover: true,
+		},
 	});
 
-	splide.mount();
+	splide.mount( window.splide.Extensions );
 </script>
