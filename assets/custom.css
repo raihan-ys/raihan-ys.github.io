@@ -47,7 +47,6 @@ body::-webkit-scrollbar-thumb {
 	width: 4px;
 	height: 10px;
 	background-color: #fff;
-	border-radius: 50%;
 	animation: fall linear infinite;
 }
 @keyframes fall {
@@ -111,13 +110,12 @@ nav .navbar-toggler {
 #hero .jumbotron-fluid {
 	height: 70vh;
 }
-#hero #carouselContainer {
-	border: rgb(255, 255, 255) 10px; 
-	border-style: double dashed dashed double;
+#hero #ocContainer {
+	background-color: rgb(25, 25, 25);
 }
-#hero .carousel-item img {
-	left: 50%;
-	transform: translateX(-50%);
+#hero #ocContainer img {
+	height: 100%;
+	border-bottom: #fff 5px solid;
 }
 #hero h1 {
 	color: red;
@@ -271,7 +269,7 @@ footer ul li img {
 		height: auto !important;
 		max-height: max-content;
 	}
-	#hero .carousel-item img {
+	#hero #ocContainer img {
 		position: static !important;
 		width: 100% !important;
 		transform: none !important;

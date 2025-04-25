@@ -1,0 +1,44 @@
+<!-- carousel -->
+			<div id="carouselContainer" class="col-md-6 p-0 h-100 position-relative overflow-hidden"> 
+				<div class="carousel slide carousel-fade h-100 w-100" id="heroCarousel" data-bs-ride="carousel">
+					<!-- indicators -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="bg-danger" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="bg-danger" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner h-100">
+						<!-- slide 1 -->
+						<div class="carousel-item active h-100" data-bs-interval="3000">
+							<img src="assets/images/slide1.jpg" alt="First Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Puncak Lawang, West Sumatra.</small>
+							</div>
+						</div>
+						<!-- slide 2 -->
+						<div class="carousel-item h-100" data-bs-interval="3000">
+							<img src="assets/images/slide2.jpg" alt="Second Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Lembah Harau, West Sumatra.</small>
+							</div>
+						</div>
+						<!-- slide 3 -->
+						<div class="carousel-item h-100" data-bs-interval="3000">
+							<img src="assets/images/slide3.jpg" alt="Third Project Image" class="position-absolute w-auto h-100 object-fit-cover">
+							<div class="carousel-caption d-none d-md-block">
+								<small>Los Lambuang, West Sumatra.</small>
+							</div>
+						</div>
+					</div>
+					<!-- controls -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+						<span class="visually-hidden"></span>
+					</button>
+				</div>
+			</div>
+			<!-- /.carousel -->
