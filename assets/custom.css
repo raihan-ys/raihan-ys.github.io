@@ -111,11 +111,9 @@ nav .navbar-toggler {
 	height: 70vh;
 }
 #hero #ocContainer {
-	background-color: rgb(25, 25, 25);
 }
 #hero #ocContainer img {
 	height: 100%;
-	border-bottom: #fff 5px solid;
 }
 #hero h1 {
 	color: red;
