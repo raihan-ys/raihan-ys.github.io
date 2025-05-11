@@ -110,10 +110,9 @@ nav .navbar-toggler {
 #hero .jumbotron-fluid {
 	height: 70vh;
 }
-#hero #ocContainer {
-}
 #hero #ocContainer img {
 	height: 100%;
+	border: double 10px rgb(111, 50, 202);
 }
 #hero h1 {
 	color: red;
