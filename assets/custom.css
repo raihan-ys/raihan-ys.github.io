@@ -115,7 +115,28 @@ nav .navbar-toggler {
 	border: double 10px rgb(111, 50, 202);
 }
 #hero h1 {
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret .75s step-end infinite;
+	border-right: .15em solid rgb(93, 0, 255);
 	color: red;
+	letter-spacing: .15em;
+	margin: 0 auto;
+  max-width: 100%;
+	overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(93, 0, 255); }
 }
 #hero #toothContainer img,
 #hero #toothRotateContainer img {
@@ -271,6 +292,16 @@ footer ul li img {
 		width: 100% !important;
 		transform: none !important;
 	}
+	#hero h1 {
+        font-size: 1rem;
+        animation: 
+            typing-mobile 2s steps(30, end),
+            blink-caret .75s step-end infinite;
+    }
+    @keyframes typing-mobile {
+        from { width: 0 }
+        to { width: 100% }
+    }
 	/* hero */
 }
 /* /.media queries */
